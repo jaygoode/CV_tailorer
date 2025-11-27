@@ -27,7 +27,7 @@ def read_yaml_file(filepath: str) -> dict:
         data = yaml.safe_load(f)
     return data
 
-def tailor_cv_text(job_desc: str, cv_job_experience_text: str, cv_skills_text:str) -> CVText:
+def tailor_cv_text(job_desc: str, cv_job_experience_text: str, cv_skills_text:str) -> dict[str]:
     """
     Takes job description + CV text and tailors the CV to fit the role better.
     Returns parsed CVText object.
@@ -61,13 +61,9 @@ def tailor_cv_text(job_desc: str, cv_job_experience_text: str, cv_skills_text:st
     updated_cv = parser.parse(response.content)
     return updated_cv.model_dump()
 
-
-# -----------------------------------------------------------
-
 if __name__ == "__main__":
     cv_data_filepath = "./CV_data.yaml"
     cv_data_dict = read_yaml_file(cv_data_filepath)
     updated_cv = tailor_cv_text(cv_data_dict["job_application_description"], cv_data_dict["cv_job_experience_text"], cv_data_dict["cv_skills_text"])
-
 
     pprint(updated_cv)
