@@ -4,6 +4,8 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import PydanticOutputParser
 from pydantic import BaseModel, Field
 import yaml 
+from pprint import pprint
+
 
 class CVText(BaseModel):
     job_experience: str = Field(..., description="The improved CV job experience text.")
@@ -31,50 +33,41 @@ def tailor_cv_text(job_desc: str, cv_job_experience_text: str, cv_skills_text:st
     Returns parsed CVText object.
     """
 
-    # ---- Model ----
     llm = ChatOllama(model="qwen3:30b", temperature=0.3)
-
-    # ---- Output parser ----
     parser = PydanticOutputParser(pydantic_object=CVText)
-
-    # ---- Prompt ----
     prompt = ChatPromptTemplate.from_messages([
         ("system",
          "You are a senior CV optimization expert specializing in cybersecurity and software development. "
-         "Rewrite and tailor the candidate’s CV to match the job description. "
+         "Rewrite and tailor the candidate's CV to match the job description. "
          "Output MUST follow the Pydantic format.\n\n"
          "{format_instructions}"
          ),
         ("human",
-         "JOB DESCRIPTION:\n{job_desc}\n\n"
-         "CURRENT CV SECTIONS:\n{cv_text}\n\n"
-         "Please rewrite them to better match the job.")
+         "JOB APPLICATION DESCRIPTION:\n{job_desc}\n\n"
+         "CURRENT CV JOB EXPERIENCE TEXT:\n{cv_job_experience_text}\n\n"
+         "CURRENT CV SKILLS SECTION TEXT:\n{cv_skills_text}\n\n"
+         "Please rewrite them to better match the job."
+         "Do not add skills or information about the CV owner that does not already exist in the CV job experience text or skills text.")
     ])
 
-    # ---- Format prompt ----
     formatted = prompt.format(
         job_desc=job_desc,
-        cv_text=cv_text,
+        cv_job_experience_text=cv_job_experience_text,
+        cv_skills_text=cv_skills_text,
         format_instructions=parser.get_format_instructions(),
     )
 
-    # ---- AI call ----
     response = llm.invoke(formatted)
-
-    # ---- Parse structured output ----
     return parser.parse(response.content)
 
 
 # -----------------------------------------------------------
 
 if __name__ == "__main__":
-    job_desc = "Penetration tester role requiring Python, network security, OSINT, Linux, and web exploitation."
-    cv_text = {
-        "job_experience": "3 years Python RPA developer; automation work; some cybersecurity courses.",
-        "skills": "Python, Linux, HTML, JS, some pentesting labs."
-    }
     cv_data_filepath = "./CV_data.yaml"
     cv_data_dict = read_yaml_file(cv_data_filepath)
-    breakpoint()
-    updated = tailor_cv_text(cv_data_dict["job_application_description"], cv_data_dict["cv_job_experience_text"], cv_data_dict["cv_skills_text"])
-    print(updated)
+    updated_cv = tailor_cv_text(cv_data_dict["job_application_description"], cv_data_dict["cv_job_experience_text"], cv_data_dict["cv_skills_text"])
+
+    cv_dict = updated_cv.model_dump()
+
+    pprint(cv_dict)
