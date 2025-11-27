@@ -58,7 +58,8 @@ def tailor_cv_text(job_desc: str, cv_job_experience_text: str, cv_skills_text:st
     )
 
     response = llm.invoke(formatted)
-    return parser.parse(response.content)
+    updated_cv = parser.parse(response.content)
+    return updated_cv.model_dump()
 
 
 # -----------------------------------------------------------
@@ -68,6 +69,5 @@ if __name__ == "__main__":
     cv_data_dict = read_yaml_file(cv_data_filepath)
     updated_cv = tailor_cv_text(cv_data_dict["job_application_description"], cv_data_dict["cv_job_experience_text"], cv_data_dict["cv_skills_text"])
 
-    cv_dict = updated_cv.model_dump()
 
-    pprint(cv_dict)
+    pprint(updated_cv)
