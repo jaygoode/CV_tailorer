@@ -16,14 +16,14 @@ def read_yaml_file(filepath: str) -> dict:
         data = yaml.safe_load(f)
     return data
 
-def write_to_text_file(updated_cv):
+def write_to_text_file(updated_cv, business_name):
     print("Writing to text files...")
-    folder_path = Path("FP")
+    folder_path = Path(business_name)
     folder_path.mkdir(parents=True, exist_ok=True)
 
-    with open("job_experience_text.txt", "w", encoding="utf-8") as f:
-        f.write(updated_cv["job_experience_text"])
+    with open(f"{folder_path}/job_experience_text.txt", "w", encoding="utf-8") as f:
+        f.write(updated_cv["job_experience"])
     print("Writing to job_experience_text.txt SUCCESS!")
-    with open("skills_text.txt", "w", encoding="utf-8") as f:
-        f.write(updated_cv["skills_text"])
+    with open(f"{folder_path}/skills_text.txt", "w", encoding="utf-8") as f:
+        f.write(updated_cv["skills"])
     print("Writing to skills_text.txt SUCESS!")

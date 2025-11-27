@@ -5,6 +5,8 @@ from langchain_core.output_parsers import PydanticOutputParser
 from pydantic import BaseModel, Field
 import yaml 
 from pprint import pprint
+import file_handler
+
 
 
 class CVText(BaseModel):
@@ -12,20 +14,6 @@ class CVText(BaseModel):
     skills: str = Field(..., description="Improved skills section.")
     model: str = Field(default="llama2", description="The AI model used to generate the CV content.")
 
-def read_yaml_file(filepath: str) -> dict:
-    """
-    Read and parse a YAML file.
-
-    Args:
-        filepath (str): Path to the YAML file.
-
-    Returns:
-        dict: Parsed YAML data.
-    """
-
-    with open(filepath, "r", encoding="utf-8") as f:
-        data = yaml.safe_load(f)
-    return data
 
 def tailor_cv_text(job_desc: str, cv_job_experience_text: str, cv_skills_text:str) -> dict[str]:
     """
@@ -63,7 +51,8 @@ def tailor_cv_text(job_desc: str, cv_job_experience_text: str, cv_skills_text:st
 
 if __name__ == "__main__":
     cv_data_filepath = "./CV_data.yaml"
-    cv_data_dict = read_yaml_file(cv_data_filepath)
+    cv_data_dict = file_handler.read_yaml_file(cv_data_filepath)
     updated_cv = tailor_cv_text(cv_data_dict["job_application_description"], cv_data_dict["cv_job_experience_text"], cv_data_dict["cv_skills_text"])
-
+    breakpoint()
+    file_handler.write_to_text_file(updated_cv, cv_data_dict["business_name"])
     pprint(updated_cv)
