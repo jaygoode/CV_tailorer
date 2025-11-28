@@ -15,13 +15,13 @@ class CVText(BaseModel):
     model: str = Field(default="llama2", description="The AI model used to generate the CV content.")
 
 
-def tailor_cv_text(job_desc: str, cv_job_experience_text: str, cv_skills_text:str) -> dict[str]:
+def tailor_cv_text(job_desc: str, cv_job_experience_text: str, cv_skills_text:str, model: str) -> dict[str]:
     """
     Takes job description + CV text and tailors the CV to fit the role better.
     Returns parsed CVText object.
     """
 
-    llm = ChatOllama(model="qwen3:30b", temperature=0.3)
+    llm = ChatOllama(model=model, temperature=0.3)
     parser = PydanticOutputParser(pydantic_object=CVText)
     prompt = ChatPromptTemplate.from_messages([
         ("system",
@@ -51,8 +51,10 @@ def tailor_cv_text(job_desc: str, cv_job_experience_text: str, cv_skills_text:st
 
 if __name__ == "__main__":
     input_fp = "./input_files"
+    # model = "qwen3:30b"
+    model = "gpt-oss:20b"
     cv_data_dict = file_handler.read_yaml_file(f"{input_fp}/CV_data.yaml")
     job_application_text = file_handler.read_txt_file(f"{input_fp}/job_application_text.txt")
-    updated_cv = tailor_cv_text(job_application_text, cv_data_dict["cv_job_experience_text"], cv_data_dict["cv_skills_text"])
+    updated_cv = tailor_cv_text(job_application_text, cv_data_dict["cv_job_experience_text"], cv_data_dict["cv_skills_text"], model)
     file_handler.write_to_text_file(updated_cv)
     pprint(updated_cv)
