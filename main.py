@@ -3,7 +3,6 @@ from langchain_ollama import ChatOllama
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import PydanticOutputParser
 from pydantic import BaseModel, Field
-import yaml 
 from pprint import pprint
 import file_handler
 
@@ -11,7 +10,8 @@ import file_handler
 
 class CVText(BaseModel):
     job_experience: str = Field(..., description="The improved CV job experience text.")
-    skills: str = Field(..., description="Improved skills section.")
+    skills: str = Field(..., description="Improved CV skills section.")
+    job_application_business_name: str = Field(..., description="The business name from the job application.")
     model: str = Field(default="llama2", description="The AI model used to generate the CV content.")
 
 
@@ -35,7 +35,7 @@ def tailor_cv_text(job_desc: str, cv_job_experience_text: str, cv_skills_text:st
          "CURRENT CV JOB EXPERIENCE TEXT:\n{cv_job_experience_text}\n\n"
          "CURRENT CV SKILLS SECTION TEXT:\n{cv_skills_text}\n\n"
          "Please rewrite them to better match the job."
-         "Do not add skills or information about the CV owner that does not already exist in the CV job experience text or skills text.")
+         "Do not add skills or information about the CV owner that does not already exist in the CV job experience text or CV skills text.")
     ])
 
     formatted = prompt.format(
@@ -50,9 +50,9 @@ def tailor_cv_text(job_desc: str, cv_job_experience_text: str, cv_skills_text:st
     return updated_cv.model_dump()
 
 if __name__ == "__main__":
-    cv_data_filepath = "./CV_data.yaml"
-    cv_data_dict = file_handler.read_yaml_file(cv_data_filepath)
-    updated_cv = tailor_cv_text(cv_data_dict["job_application_description"], cv_data_dict["cv_job_experience_text"], cv_data_dict["cv_skills_text"])
-    breakpoint()
-    file_handler.write_to_text_file(updated_cv, cv_data_dict["business_name"])
+    input_fp = "./input_files"
+    cv_data_dict = file_handler.read_yaml_file(f"{input_fp}/CV_data.yaml")
+    job_application_text = file_handler.read_txt_file(f"{input_fp}/job_application_text.txt")
+    updated_cv = tailor_cv_text(job_application_text, cv_data_dict["cv_job_experience_text"], cv_data_dict["cv_skills_text"])
+    file_handler.write_to_text_file(updated_cv)
     pprint(updated_cv)
