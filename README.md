@@ -4,7 +4,7 @@
 
 1. Clone the repository
 2. Install dependencies: `pip install -r requirements.txt`
-
+3 activate envelope ./.venv/scripts/Activate
 ## Usage
 
 1. Place your CV file yaml file in the `input_files` folder, named `CV_data.yaml`, keys describe what data goes where. (job experience text and skills text)

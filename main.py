@@ -11,17 +11,17 @@ import file_handler
 class CVText(BaseModel):
     job_experience: str = Field(..., description="The improved CV job experience text.")
     skills: str = Field(..., description="Improved CV skills section.")
-    suggested_skills: str = Field(..., description="A list of suggested skills to add to the CV, if any.")
+    suggested_skills: list[str] = Field(..., description="A list of suggested skills to add to the CV, if any.")
     job_application_business_name: str = Field(..., description="The business name from the job application.")
     model: str = Field(default="llama2", description="The AI model used to generate the CV content.")
 
 
-def tailor_cv_text(job_desc: str, cv_job_experience_text: str, cv_skills_text:str, model: str) -> dict[str]:
+def tailor_cv_text(job_desc: str, cv_data:dict, model: str) -> dict[str]:
     """
     Takes job description + CV text and tailors the CV to fit the role better.
     Returns parsed CVText object.
     """
-
+    
     llm = ChatOllama(model=model, temperature=0.3)
     parser = PydanticOutputParser(pydantic_object=CVText)
     prompt = ChatPromptTemplate.from_messages([
@@ -65,8 +65,8 @@ def tailor_cv_text(job_desc: str, cv_job_experience_text: str, cv_skills_text:st
 
     formatted = prompt.format(
         job_desc=job_desc,
-        cv_job_experience_text=cv_job_experience_text,
-        cv_skills_text=cv_skills_text,
+        cv_job_experience_text=cv_data_dict["cv_job_experience_text"],
+        cv_skills_text=cv_data_dict["cv_skills_text"],
         format_instructions=parser.get_format_instructions(),
     )
 
@@ -75,11 +75,9 @@ def tailor_cv_text(job_desc: str, cv_job_experience_text: str, cv_skills_text:st
     return updated_cv.model_dump()
 
 if __name__ == "__main__":
-    input_fp = "./input_files"
-    # model = "qwen3:30b"
-    model = "gpt-oss:20b"
-    cv_data_dict = file_handler.read_yaml_file(f"{input_fp}/CV_data.yaml")
-    job_application_text = file_handler.read_txt_file(f"{input_fp}/job_application_text.txt")
-    updated_cv = tailor_cv_text(job_application_text, cv_data_dict["cv_job_experience_text"], cv_data_dict["cv_skills_text"], model)
-    file_handler.write_to_text_file(updated_cv)
+    config = file_handler.read_yaml_file("config.yaml")
+    cv_data_dict = file_handler.read_yaml_file(config["input_folder"] + config["CV_data"])
+    job_application_text = file_handler.read_txt_file(config["input_folder"] + config["job_application_filename"])
+    updated_cv = tailor_cv_text(job_application_text, cv_data_dict, config["model"])
+    file_handler.write_to_text_file(updated_cv, config)
     pprint(updated_cv)

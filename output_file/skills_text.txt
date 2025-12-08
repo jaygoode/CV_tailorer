@@ -1,0 +1,6 @@
+RPA & Automation and scripting: Python, UiPath (familiar), Selenium, PyAutoGUI, LangChain, N8N, Bash
+AI & Workflow Automation: AI agents, agentic automation, process optimization
+Software Development: JavaScript/TypeScript (Fullstack), Docker
+Data & Systems: Pandas, OpenPyXL, SQL, Microsoft Azure, AWS
+Penetration testing tools: Burp suite, FFUF, feroxbuster, SQLmap, metasploit, katana, nuclei, hashcat, hydra
+Completed courses in Cybersecurity & Networking: CompTIA Network+, Security+, Pentest+, HTB Certified Web Exploitation Specialist (CWES)

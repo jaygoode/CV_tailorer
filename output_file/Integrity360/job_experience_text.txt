@@ -1,7 +1,18 @@
-August 2025 – Present: Completed HTB Certified Web Exploitation Specialist course and actively practicing in labs; currently pursuing CPTS/OSCP training. Developed an AI‑powered study assistant integrated with Anki using LangChain/LangGraph to streamline learning of exploitation techniques.
+August 2025 – Present
+• Completed HTB Certified Web Exploitation Specialist course; currently practicing in labs and preparing for the exam. Started CPTS/OSCP course and built an AI‑powered study assistant integrated with Anki using LangChain/LangGraph.
 
-January 2023 – August 2025: Software Developer & Support Manager at Digia Finland Oy. Designed, developed, and deployed RPA automation solutions with Python, reducing client operational hours by 3–5 projects annually. Maintained a €500k+ enterprise file transfer system, ensuring data accuracy and continuity. Collaborated with cross‑functional teams to refine automation logic, improve scalability, and secure client operations. Led technical meetings, secured new contracts, and optimized existing solutions for reliability.
+January 2023 – August 2025
+Software Developer & Support Manager, Digia Finland Oy
+• Designed, developed, and deployed RPA automation solutions independently using Python and automation frameworks, delivering 3–5 complete projects annually and saving customers hundreds to thousands of hours each year.
+• Maintained a large‑scale enterprise file transfer/transform system (project investment value €500,000+) and ensured high data accuracy and operational continuity.
+• Collaborated with business and technical teams to refine automation logic and improve scalability across client operations.
+• Rebuilt and managed key client relationships, leading technical meetings and securing multiple new contract opportunities.
+• Enhanced process efficiency by addressing automation change requests, debugging, and optimizing existing solutions for continuous reliability.
 
-May 2017 – August 2021: Mechanical Engineering Trainee at Wärtsilä Oy (while completing B.Sc. in Mechanical Engineering). Conducted engineering calculations, system tuning, and documentation for international client projects, demonstrating analytical rigor and attention to detail.
+May 2017 – August 2021
+Mechanical Engineering Trainee, Wärtsilä Oy
+• Performed engineering calculations and system tuning for Wärtsilä W32 engine projects.
+• Managed documentation and supported installation and calibration tasks across international client projects.
 
-Leadership: Finnish Army Reserves – Platoon vice‑leader, managing 30 personnel, training, logistics, and operations under high‑stress conditions.
+Leadership Experience – Finnish Army Reserves (Dragsviikin Maakuntajoukkue)
+• Platoon vice‑leader (30 personnel); managed training, logistics, and operations in high‑stress conditions.
