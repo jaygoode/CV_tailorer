@@ -1,6 +1,7 @@
 # model: gpt-oss:20b
 model: qwen3:30b
 temperature: 0.3
+using_llm: false
 
 input_folder: ./input_files/
 output_folder: ./output_files/
@@ -9,3 +10,5 @@ job_experience_file: job_experience_text.txt
 skills_file: skills_text.txt
 suggested_skills_file: suggested_skills_text.txt
 CV_data: CV_data.yaml
+updated_cv_jsonfile: updated_cv_data.json
+profile_pcture_path: ./input_files/profile_picture.jpg
