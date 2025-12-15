@@ -31,20 +31,16 @@ def read_txt_file(filepath:str):
     with open(filepath, "r", encoding="utf-8") as file:
         return file.read()
 
-def write_to_text_file(updated_cv, config):
+def write_to_text_file(updated_cv, config, cv_data_dict):
     print("Writing to text files...")
     folder_name = updated_cv.get("job_application_business_name") or datetime.today().strftime("%Y-%m-%d%H%M")
     folder_path = Path(config["output_folder"], folder_name)
     folder_path.mkdir(parents=True, exist_ok=True)
 
-    with open(folder_path / config["job_experience_file"], "w", encoding="utf-8") as f:
-        f.write(updated_cv["job_experience"])
-    print(f"Writing to {config["job_experience_file"]} SUCESS!")
 
-    with open(folder_path / config["skills_file"], "w", encoding="utf-8") as f:
-        f.write(updated_cv["skills"])
-    print(f"Writing to {config["skills_file"]} SUCESS!")
-    
-    with open(folder_path / config["suggested_skills_file"], "w", encoding="utf-8") as f:
-        f.write("\n".join(updated_cv["suggested_skills"]))
-    print(f"Writing to {config["suggested_skills_file"]} SUCESS!")
+    file_topics = list(cv_data_dict.keys())
+    breakpoint()
+    for file_topic in file_topics:
+        with open((folder_path / config[file_topic]).with_suffix(".txt"), "w", encoding="utf-8") as f:
+            f.write(updated_cv[file_topic])
+        print(f"Writing {file_topic} SUCESS!")

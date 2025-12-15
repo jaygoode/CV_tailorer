@@ -1,8 +1,0 @@
-UiPath
-APIs
-databases
-integrations
-DevOps practices
-prompt engineering
-LLMs
-agentic workflows

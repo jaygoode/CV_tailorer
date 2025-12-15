@@ -3,8 +3,8 @@ model: qwen3:30b
 temperature: 0.3
 
 input_folder: ./input_files/
-output_folder: ./output_file/
-job_application_filename: wartsila_job_appl.txt
+output_folder: ./output_files/
+job_application_filename: quadcode.txt
 job_experience_file: job_experience_text.txt
 skills_file: skills_text.txt
 suggested_skills_file: suggested_skills_text.txt
