@@ -5,6 +5,7 @@ from langchain_core.output_parsers import PydanticOutputParser
 from pydantic import BaseModel, Field
 from pprint import pprint
 import file_handler
+import pdf_generator
 
 
 
@@ -92,4 +93,4 @@ if __name__ == "__main__":
     else:
         updated_cv_data= file_handler.read_json_file(config["updated_cv_jsonfile"])
     pprint(updated_cv_data)
-    file_handler.generate_cv_pdf(updated_cv_data, cv_data_dict, config["profile_pcture_path"])
+    pdf_generator.generate_cv_pdf(updated_cv_data, cv_data_dict, config["profile_pcture_path"])
