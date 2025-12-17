@@ -2,29 +2,31 @@ from dotenv import load_dotenv
 import os
 from fpdf import FPDF
 import re
+from pathlib import Path 
 
 load_dotenv()
 
 #LINE HEIGHT AND WIDTH SETTINGS
-HEADER_LINE_HEIGHT = 15
-SUB_HEADER_LINE_HEIGHT = 9
-LINE_HEIGHT = 6
+HEADER_LINE_HEIGHT = 13
+SUB_HEADER_LINE_HEIGHT = 7.5
+LINE_HEIGHT = 5
 LINE_WIDTH = 0
 
 #FONT SETTINGS
 MAIN_HEADER_FONT_SIZE = 16
-SUB_HEADER_FONT_SIZE = 13
-PARAGRAPH_FONT_SIZE = 11.5
-FONT = "Arial"
+SUB_HEADER_FONT_SIZE = 12
+PARAGRAPH_FONT_SIZE = 11
+FONT = "DejaVu"
+# FONT = "Arial"
 MARGIN = 10
 
 #profile image settings
-IMG_WIDTH = 30  
-IMG_HEIGHT = 40  
+IMG_WIDTH = 28  
+IMG_HEIGHT = 38  
 X_START = MARGIN
 Y_START = MARGIN
 
-def generate_cv_pdf(updated_cv_data: dict, cv_data: dict, profile_picture_path: str):
+def generate_cv_pdf(updated_cv_data: dict, cv_data: dict, profile_picture_path: str, folder_path: Path):
     """
     Generates a simple, ATS-friendly CV PDF from structured CV data.
 
@@ -34,6 +36,13 @@ def generate_cv_pdf(updated_cv_data: dict, cv_data: dict, profile_picture_path: 
     cleaned_updated_cv_data=sanitize_text(updated_cv_data)
     cleaned_cv_data=sanitize_text(cv_data)
     pdf = FPDF()
+
+   
+    pdf.add_font(FONT, "", "fonts/DejaVuSans.ttf", uni=True)
+    pdf.add_font(FONT, "B", "fonts/DejaVuSans-Bold.ttf", uni=True)  # Bold
+
+    pdf.set_font(FONT, size=12)
+
     pdf.set_margins(MARGIN, MARGIN, MARGIN)
     pdf.set_auto_page_break(auto=True, margin=MARGIN)
     pdf.add_page()
@@ -43,7 +52,7 @@ def generate_cv_pdf(updated_cv_data: dict, cv_data: dict, profile_picture_path: 
     create_experience_section(pdf, cleaned_updated_cv_data)
     create_skills_section(pdf, cleaned_updated_cv_data)
     create_achievements_section(pdf, cleaned_updated_cv_data)
-    create_pdf_file(pdf)
+    create_pdf_file(pdf, folder_path)
 
 def create_pdf_header(pdf: FPDF, cleaned_cv_data, profile_picture_path: str):
     header_data = {
@@ -63,7 +72,7 @@ def create_pdf_header(pdf: FPDF, cleaned_cv_data, profile_picture_path: str):
 
     #SETTING ROLE 
     pdf.set_x(X_START + IMG_WIDTH + 5)  # 5mm space after image
-    pdf.set_font(FONT, "", MAIN_HEADER_FONT_SIZE)  
+    pdf.set_font(FONT, "", SUB_HEADER_FONT_SIZE + 2)  
     pdf.cell(LINE_WIDTH, SUB_HEADER_LINE_HEIGHT, cleaned_cv_data["role"], ln=True)  #cell(width, height, text, ln=True moves cursor to next line)
     
     #SETTING CONTACT INFO
@@ -106,8 +115,9 @@ def create_achievements_section(pdf, cleaned_updated_cv_data):
     pdf.set_font(FONT, "", PARAGRAPH_FONT_SIZE)
     pdf.multi_cell(LINE_WIDTH, LINE_HEIGHT, cleaned_updated_cv_data.get("key_achievements", ""))
 
-def create_pdf_file(pdf):
-    filename="cv.pdf"
+def create_pdf_file(pdf:FPDF, folder_path: Path):
+    filepath = folder_path / "Tailored_CV.pdf"
+    filename = str(filepath)
     pdf.output(filename)
     print(f"CV successfully generated: {filename}")
 

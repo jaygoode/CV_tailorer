@@ -6,6 +6,7 @@ from pydantic import BaseModel, Field
 from pprint import pprint
 import file_handler
 import pdf_generator
+from pathlib import Path
 
 
 
@@ -30,9 +31,10 @@ def tailor_cv_text(job_desc: str, cv_data:dict, model: str) -> dict[str]:
     ("system",
      "You are a senior CV optimization expert specializing in cybersecurity and software development. "
      "Your job is to rewrite the applicant's CV *strictly based on the provided CV text*, and tailor "
-     "it to the provided job description **without inventing or fabricating any information**.\n\n"
+     "it to the provided job description **without inventing or fabricating any information**.\n"
+     "where possible, use keywords from the job description when rewriting the CV sections.\n\n"
 
-     "⚠️ STRICT RULES (NO EXCEPTIONS):\n"
+     "⚠️ STRICT RULES (NO EXCEPTIONS):\n" 
      "1. You may ONLY use information explicitly found in the provided CV job experience text or skills text.\n"
      "2. You must NOT invent responsibilities, achievements, technologies, tools, certifications, or skills.\n"
      "3. You must NOT add new experience, projects, job titles, education, or credentials.\n"
@@ -44,6 +46,7 @@ def tailor_cv_text(job_desc: str, cv_data:dict, model: str) -> dict[str]:
      "- Use clear, human-like phrasing with minimal corporate buzzwords.\n"
      "- Keep tone factual, concise, and concrete.\n"
      "- Preserve meaning but improve structure, clarity, and relevance.\n"
+     "- Preserve skills section structure, and keep skills in descriptive groups.\n"
      "- Tailor emphasis to match job description, but WITHOUT adding new content.\n\n"
 
      "REQUIRED OUTPUT (Pydantic JSON):\n"
@@ -88,9 +91,10 @@ if __name__ == "__main__":
     if config.get("using_llm", False):
         job_application_text = file_handler.read_txt_file(config["input_folder"] + config["job_application_filename"])
         updated_cv_data = tailor_cv_text(job_application_text, cv_data_dict, config["model"])
-        file_handler.create_text_files(updated_cv_data, config)
+        folder_path =file_handler.create_text_files(updated_cv_data, config)
         file_handler.write_json_file(updated_cv_data, config["updated_cv_jsonfile"])
     else:
         updated_cv_data= file_handler.read_json_file(config["updated_cv_jsonfile"])
+        folder_path = Path("output_files")
     pprint(updated_cv_data)
-    pdf_generator.generate_cv_pdf(updated_cv_data, cv_data_dict, config["profile_pcture_path"])
+    pdf_generator.generate_cv_pdf(updated_cv_data, cv_data_dict, config["profile_picture_path"], folder_path)

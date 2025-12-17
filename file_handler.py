@@ -8,8 +8,8 @@ import json
 
 load_dotenv()
 
-def write_json_file(data: dict, filepath: str):
-    with open(filepath, "w", encoding="utf-8") as f:
+def write_json_file(data: dict, filename: str):
+    with open(filename, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=4, ensure_ascii=False)
 
 def read_json_file(filepath: str) -> dict:
@@ -46,7 +46,7 @@ def read_txt_file(filepath:str):
     with open(filepath, "r", encoding="utf-8") as file:
         return file.read()
 
-def create_text_files(updated_cv:dict, config:dict):
+def create_text_files(updated_cv:dict, config:dict) -> Path:
     print("Writing to text files...")
     folder_name = updated_cv.get("job_application_business_name") or datetime.today().strftime("%Y-%m-%d%H%M")
     folder_path = Path(config["output_folder"], folder_name)
@@ -61,5 +61,7 @@ def create_text_files(updated_cv:dict, config:dict):
                     continue
             f.write(updated_cv[file_topic])
         print(f"Writing {file_topic} SUCCESS!")
+
+    return folder_path
 
 
