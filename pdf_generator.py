@@ -5,15 +5,24 @@ import re
 
 load_dotenv()
 
+#LINE HEIGHT AND WIDTH SETTINGS
 HEADER_LINE_HEIGHT = 15
-SUB_HEADER_LINE_HEIGHT = 8
-LINE_HEIGHT = 5
+SUB_HEADER_LINE_HEIGHT = 9
+LINE_HEIGHT = 6
 LINE_WIDTH = 0
+
+#FONT SETTINGS
 MAIN_HEADER_FONT_SIZE = 16
 SUB_HEADER_FONT_SIZE = 13
 PARAGRAPH_FONT_SIZE = 11.5
 FONT = "Arial"
 MARGIN = 10
+
+#profile image settings
+IMG_WIDTH = 30  
+IMG_HEIGHT = 40  
+X_START = MARGIN
+Y_START = MARGIN
 
 def generate_cv_pdf(updated_cv_data: dict, cv_data: dict, profile_picture_path: str):
     """
@@ -45,13 +54,22 @@ def create_pdf_header(pdf: FPDF, cleaned_cv_data, profile_picture_path: str):
     "github": os.getenv("GITHUB")
 }
     # add_profile_image(pdf, profile_picture_path)
+    pdf.image(profile_picture_path, x=X_START, y=Y_START, w=IMG_WIDTH, h=IMG_HEIGHT)
+
+    #SETTING NAME 
+    pdf.set_x(X_START + IMG_WIDTH + 5)  # 5mm space after image
     pdf.set_font(FONT, "B", MAIN_HEADER_FONT_SIZE)  
-    pdf.cell(LINE_WIDTH, SUB_HEADER_LINE_HEIGHT, os.getenv("NAME"), ln=True)  
+    pdf.cell(LINE_WIDTH, LINE_HEIGHT, os.getenv("NAME"), ln=True)  
+
+    #SETTING ROLE 
+    pdf.set_x(X_START + IMG_WIDTH + 5)  # 5mm space after image
     pdf.set_font(FONT, "", MAIN_HEADER_FONT_SIZE)  
     pdf.cell(LINE_WIDTH, SUB_HEADER_LINE_HEIGHT, cleaned_cv_data["role"], ln=True)  #cell(width, height, text, ln=True moves cursor to next line)
     
+    #SETTING CONTACT INFO
     pdf.set_font(FONT, "", PARAGRAPH_FONT_SIZE)  
     for value in header_data.values():
+        pdf.set_x(X_START + IMG_WIDTH + 5)  # 5mm space after image
         pdf.cell(LINE_WIDTH, LINE_HEIGHT, value, ln=True)
 
 def create_experience_section(pdf: FPDF, cleaned_updated_cv_data: dict):
@@ -93,15 +111,6 @@ def create_pdf_file(pdf):
     pdf.output(filename)
     print(f"CV successfully generated: {filename}")
 
-
-def add_profile_image(pdf: FPDF, profile_picture_path: str):
-    img_width = 30  
-    img_height = 30  
-    x_start = LINE_HEIGHT
-    y_start = LINE_HEIGHT
-    pdf.image(profile_picture_path, x=x_start, y=y_start, w=img_width, h=img_height)
-    # Move cursor to the right of the image
-    pdf.set_xy(x_start + img_width + 5, y_start)  # 5mm space after image
 
 def sanitize_text(obj):
     """
