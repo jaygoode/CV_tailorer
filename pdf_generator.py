@@ -1,6 +1,7 @@
 from dotenv import load_dotenv
 import os
 from fpdf import FPDF
+import re
 
 load_dotenv()
 
@@ -54,25 +55,31 @@ def create_pdf_header(pdf: FPDF, cleaned_cv_data, profile_picture_path: str):
         pdf.cell(LINE_WIDTH, LINE_HEIGHT, value, ln=True)
 
 def create_experience_section(pdf: FPDF, cleaned_updated_cv_data: dict):
-    #can we split if line starts with dash? or split on newline and grab 2 first lines for subheaders?
-    #what happens if ai doesnt create correct format?
     pdf.set_x(MARGIN)
     pdf.set_font(FONT, "B", MAIN_HEADER_FONT_SIZE)       
     pdf.cell(LINE_WIDTH, HEADER_LINE_HEIGHT, "PROFESSIONAL EXPERIENCE", ln=True)
     pdf.set_font(FONT, "", PARAGRAPH_FONT_SIZE) 
-    # pdf.set_x(MARGIN)
-    pdf.multi_cell(LINE_WIDTH, LINE_HEIGHT, cleaned_updated_cv_data["cv_job_experience"])  
+    
+    #split on double newlines to get separate experience sections
+    sections_experience_text = re.split(r"\n\s*\n", cleaned_updated_cv_data["cv_job_experience"].strip())
+    for section in sections_experience_text:
+        split_experience_text = section.split('\n')
+        for i, line in enumerate(split_experience_text):
+            pdf.set_x(MARGIN)
+            if i == 0 or i == 1:
+                pdf.set_font(FONT, "B", PARAGRAPH_FONT_SIZE)
+                pdf.multi_cell(LINE_WIDTH, SUB_HEADER_LINE_HEIGHT-1.5, line.strip())
+            else:
+                pdf.set_x(MARGIN+5)
+                pdf.set_font(FONT, "", PARAGRAPH_FONT_SIZE)
+                pdf.multi_cell(LINE_WIDTH, LINE_HEIGHT, line.strip())
 
 def create_skills_section(pdf:FPDF, cleaned_updated_cv_data:dict):
     pdf.set_x(MARGIN)
-    pdf.set_font(FONT, "B", SUB_HEADER_FONT_SIZE)
+    pdf.set_font(FONT, "B", MAIN_HEADER_FONT_SIZE)
     pdf.cell(LINE_WIDTH, HEADER_LINE_HEIGHT, "SKILLS", ln=True)
     pdf.set_font(FONT, "", PARAGRAPH_FONT_SIZE)
     pdf.multi_cell(LINE_WIDTH, LINE_HEIGHT, cleaned_updated_cv_data["skills"])
-    # if isinstance(skills, list):
-    #     pdf.cell(LINE_WIDTH, LINE_HEIGHT, "\n".join(skills))
-    # else:
-    #     pdf.cell(LINE_WIDTH, LINE_HEIGHT, skills)
     
 def create_achievements_section(pdf, cleaned_updated_cv_data):
     pdf.set_x(MARGIN)
