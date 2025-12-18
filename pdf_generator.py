@@ -13,7 +13,7 @@ LINE_HEIGHT = 5
 LINE_WIDTH = 0
 
 #FONT SETTINGS
-MAIN_HEADER_FONT_SIZE = 16
+MAIN_HEADER_FONT_SIZE = 14
 SUB_HEADER_FONT_SIZE = 12
 PARAGRAPH_FONT_SIZE = 11
 FONT = "DejaVu"
@@ -128,7 +128,9 @@ def sanitize_text(obj):
     in strings, lists, or dicts.
     """
     if isinstance(obj, str):
-        return obj.replace("•", "-").replace("–", "-").replace("  ", "")
+        obj = obj.replace("–", "-").replace("  ", "")
+        # obj = obj.replace("•", "-").replace("–", "-").replace("  ", "")
+        return obj
     elif isinstance(obj, list):
         return [sanitize_text(item) for item in obj]
     elif isinstance(obj, dict):
