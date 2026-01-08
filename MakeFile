@@ -65,25 +65,45 @@ generate: install
 # Safety Check
 # -------------------------
 check-dirs:
+ifeq ($(OS),Windows_NT)
+	@if "$(INPUT_DIR)"=="\" (echo Refusing to operate on root & exit 1)
+	@if "$(OUTPUT_DIR)"=="\" (echo Refusing to operate on root & exit 1)
+else
 	@if [ "$(INPUT_DIR)" = "/" ] || [ "$(OUTPUT_DIR)" = "/" ]; then \
 		echo "Refusing to operate on root directory"; exit 1; \
 	fi
+endif
 
 # -------------------------
 # Cleanup (Hardened)
 # -------------------------
 cleanup: check-dirs
-	@echo "Cleaning input .txt files..."
-	@if [ -d "$(INPUT_DIR)" ]; then \
-		$(RM_FILE) $(INPUT_DIR)\*.txt 2>nul || true; \
-	fi
+	@echo "Cleaning input files and output directories..."
+	$(UV) run python - <<'EOF'
+	import os
+	import shutil
+	from pathlib import Path
 
-	@echo "Cleaning output directories..."
-	@if [ -d "$(OUTPUT_DIR)" ]; then \
-		$(RM_DIR) $(OUTPUT_DIR)\* 2>nul || true; \
-	fi
+	INPUT_DIR = Path("input_files")
+	OUTPUT_DIR = Path("output_files")
 
-	@echo "Cleanup complete."
+	# Prevent accidental deletion of root
+	for d in (INPUT_DIR, OUTPUT_DIR):
+		if d.resolve() in (Path("/").resolve(), Path("C:/").resolve()):
+			raise RuntimeError(f"Refusing to operate on {d}")
+
+	# Delete .txt files in input_files
+	for f in INPUT_DIR.glob("*.txt"):
+		f.unlink()
+		print(f"Deleted file:", f.name)
+
+	# Delete all subdirectories in output_files
+	for d in OUTPUT_DIR.iterdir():
+		if d.is_dir():
+			shutil.rmtree(d)
+			print(f"Deleted folder:", d.name)
+	EOF
+		@echo "Cleanup complete."
 
 # -------------------------
 # Reset Environment
