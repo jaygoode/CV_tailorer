@@ -116,7 +116,7 @@ def create_achievements_section(pdf, cleaned_updated_cv_data):
     pdf.multi_cell(LINE_WIDTH, LINE_HEIGHT, cleaned_updated_cv_data.get("key_achievements", ""))
 
 def create_pdf_file(pdf:FPDF, folder_path: Path):
-    filepath = folder_path / "Tailored_CV.pdf"
+    filepath = folder_path / "Johnny_nylund_CV.pdf"
     filename = str(filepath)
     pdf.output(filename)
     print(f"CV successfully generated: {filename}")

@@ -8,8 +8,9 @@
 ## Usage
 
 1. Place your CV file yaml file in the `input_files` folder, named `CV_data.yaml`, keys describe what data goes where. (job experience text and skills text)
-2. Add the job description to `job_application_text.txt` in the input_files folder.
-3. Run the program: `python cv_tailorer.py`
+2. Add the job description to a text file in the input_files folder.
+3. in config.yaml, set the job_application_filename key value to the filename you chose in step 2. (job desc)
+4. Run the program: `python cv_tailorer.py`
 
 The program will generate a tailored CV based on the job description, to the location of `output_files` inside a the folder that is named after the company name taken from job application text.
 
