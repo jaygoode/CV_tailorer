@@ -1,0 +1,63 @@
+About Mirantis
+
+Mirantis is the Kubernetes-native AI infrastructure company, enabling organizations to build and operate scalable, secure, and sovereign infrastructure for modern AI, machine learning, and data-intensive applications. By combining open source innovation with deep expertise in Kubernetes orchestration, Mirantis empowers platform engineering teams to deliver composable, production-ready developer platforms across any environment—on-premises, in the cloud, at the edge, or in sovereign data centers. As enterprises navigate the growing complexity of AI-driven workloads, Mirantis delivers the automation, GPU orchestration, and policy-driven control needed to manage infrastructure with confidence and agility. Committed to open standards and freedom from lock-in, Mirantis ensures that customers retain full control of their infrastructure strategy.
+
+
+Job Description
+
+Mirantis is looking for a Software Engineer passionate about shaping the future of AI-powered developer tools. In this role, you'll work on a brand-new AI-focused developer tool, expanding our industry-leading Lens product family. This solution will empower AI application developers, streamlining how modern teams develop AI-driven applications.
+
+At Mirantis, we strive to deliver world-class user experiences and craft products that are beautiful inside and out. As a key contributor, you'll work on a high-impact, greenfield Electron-based desktop application. Your contributions will play a key role in Mirantis’s broader AI/ML developer tools strategy, aligning with Lens and the wider Mirantis ecosystem.
+
+Responsibilities:
+
+Design & Development: Architect and develop a high-performance, cross-platform desktop application.
+AI Integration: Integrate with leading AI platforms, frameworks, and LLM service providers.
+User-Centric Engineering: Collaborate with UX/UI designers to create seamless, intuitive developer experiences.
+Collaboration & Ownership: Work closely with product managers and engineers to drive product development from concept to release.
+Quality & Performance: Write clean, maintainable code, conduct rigorous code reviews, and optimize performance while adhering to industry best practices.
+Continuous Improvement: Stay current with emerging technologies and best practices, continuously improving product quality and development processes.
+
+Qualifications
+
+Experience & Background: 3+ years of professional software development experience, ideally with exposure to developer tools or AI/ML-powered applications. A Bachelor’s or Master’s degree in Computer Science, Engineering, or equivalent practical experience is a plus.
+Core Technical Skills: Strong proficiency in TypeScript, Node.js, and React, with a focus on scalable, production-grade applications.
+Electron Expertise: Experience building, optimizing, and securing desktop applications with Electron, ensuring cross-platform performance (Windows, macOS, Linux).
+AI & LLM Expertise: Familiarity with LLM APIs (e.g., OpenAI, AWS Bedrock, etc.) and how developers integrate AI into applications.
+User-Centric Mindset: Strong developer empathy with a passion for creating intuitive, high-quality developer tools.
+Communication & Collaboration: Excellent communication skills, with the ability to work effectively across engineering, product, and design teams.
+Why Join Team Lens at Mirantis?
+
+Join the founding team of our AI/ML developer tool at the forefront of industry innovation.
+Work with world-class engineers, product, and design teams in a fast-paced, impact-driven environment.
+Flexible remote work within the EU or the option to work from our Helsinki hub.
+Join a company that values user experience, community engagement, and an open-source ethos at its core.
+Make a tangible impact—your contributions will play a key role in Mirantis’s broader AI/ML developer tools strategy, aligning with Lens and the wider Mirantis ecosystem.
+If you’re passionate about building AI-powered developer tools—we want to hear from you! Apply today!
+
+
+Additional Information
+
+What does Mirantis offer you?
+
+Work in a global, collaborative, remote-first culture that rewards initiative and execution.
+
+Play a pivotal role in shaping the next era of cloud and AI modernisation.
+
+Manage high-impact enterprise accounts with immediate opportunity for growth.
+
+Work with exceptionally passionate, talented and engaging colleagues, helping Fortune 500 and Global 2000 customers implement next-generation cloud technologies.
+
+Be a part of cutting-edge, open-source innovation.
+
+Thrive in the high-energy environment of a young company where openness, collaboration, risk-taking, and continuous growth are valued.
+
+Professional development and training.
+
+Attend conferences and working groups.
+
+Customized workstation (macOS, Windows).
+
+Professional development and training.
+
+Competitive compensation, performance incentives, and opportunities for advancement.

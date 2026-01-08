@@ -1,0 +1,24 @@
+August 2025 - Present
+Self-Directed Projects & AI/Agentic Automation Development and Cybersecurity
+  • Developed an autonomous remediation agent that performs security scanning, generates secure code patches using local LLM inference, computes confidence from historical data, auto-merges safe fixes, and escalates low-confidence cases to developers
+  • Completed HTB Certified Web Exploitation Specialist course; currently practicing in labs and preparing for advanced certifications (CPTS/OSCP)
+  • Built an AI-powered study assistant using LangChain integrated with Anki to automate learning workflows
+  • Designed and implemented multiple agentic automation workflows to demonstrate AI orchestration in real-world applications
+
+January 2023 - August 2025
+Software Developer & Support Manager, Digia Finland Oy
+  • Designed, developed, and deployed full RPA automation solutions using Python and automation frameworks, delivering 3–5 projects annually and saving clients hundreds to thousands of hours
+  • Maintained and contributed to a large-scale enterprise file transfer and transformation system (project value €500,000+), ensuring data accuracy, operational continuity, and protection of sensitive data
+  • Collaborated with business and technical teams to refine automation logic, improve scalability, and integrate APIs and databases
+  • Led knowledge-sharing sessions and supported citizen developers in automation projects
+  • Rebuilt and managed key client relationships, securing new contracts through technical meetings and solution proposals
+
+May 2017 - August 2021 (Summers while studying for B.Sc. in Mech. Eng.)
+Mechanical Engineering Trainee, Wärtsilä Oy
+  • Conducted engineering calculations and system tuning for Wärtsilä engine projects
+  • Managed documentation and supported installation and calibration tasks across international client projects
+
+Leadership Experience
+Finnish Army Reserves (Dragsviikin Maakuntajoukkue)
+  • Led a platoon of 30 personnel, managing training, logistics, and operations under high-stress conditions
+  • Developed leadership, teamwork, strategic thinking, and problem-solving skills applicable to cross-functional technical teams

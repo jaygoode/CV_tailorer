@@ -1,0 +1,20 @@
+REST
+JSON
+XML
+APIs
+ITSM tools
+ServiceNow
+Jira
+Zendesk
+BMC
+log analysis
+message flows
+root cause analysis
+documentation
+knowledge sharing
+continuous improvement
+customer-facing communication
+scalable solutions
+resilient systems
+integration maintenance
+change request estimation

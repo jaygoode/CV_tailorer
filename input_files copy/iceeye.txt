@@ -1,0 +1,55 @@
+Job Title: Software Engineer - Ground Stations
+
+Location: Espoo, Finland (Hybrid)
+
+Team: Fleet Control & Communications
+
+Type: Full-Time, Permanent
+
+Reports To: Engineering Manager, CONNECT & Ground Stations
+
+Employment is subject to applicable security screening (including SUPO, where required)
+About The Role
+
+We are seeking a highly motivated Software Engineer to join our team responsible for managing and interfacing with ground station providers. This encompasses interfacing with ground station service providers and local antenna installations, maintaining configuration for stations and their availability and interfacing with pass and post pass metrics. Understanding of satellite communications, propagation of radio waves, and modulations will help you get going faster.
+
+The successful candidate will possess hands-on experience in designing, implementing, and operating scalable services with database connections and RESTful APIs in production environments. We are searching for an individual with technical expertise implementing high-volume and low-latency systems. Success is measured by outcomes, and we value individuals who are focused and driven to achieve those outcomes.
+
+Our technology stack comprises Python and Go, running on both AWS cloud and on-premise Kubernetes infrastructure. We utilize Postgres and MongoDB as our data stores.
+
+Requirements
+
+Bachelor’s degree in Computer Science, Engineering or a similar field
+3+ years of software engineering work experience
+Pragmatic software engineering skills in Python, Go or a similar language
+Experience in modeling and implementing data structures and RESTful APIs
+Experience with Kubernetes, Terraform, CI/CD pipelines, container orchestration, and GitOps workflows
+Problem-solving skills and ability to identify, research and resolve new problems, including those involving new technologies
+Keen interest and pragmatic experience in using AI/LLM tools assisting software development
+Ability and willingness to learn new skills in a fast-paced environment
+Strong team-working and communication skills in English
+What will be an Advantage
+
+Understanding of satellite communications, RF propagation and modulations
+Experience working with Ground Station vendors
+Experience with Kubernetes, Terraform, CI/CD pipelines, container orchestration, and GitOps workflows
+Benefits
+
+What We Offer:
+
+A mission that matters: Contribute to a dynamic Earth Observation company making a real difference in the world.
+
+Supportive environment: Work in a diverse and collaborative team with a strong focus on individual growth and development.
+
+Competitive compensation: Base salary range for this position is contingent on your experience level, and will be negotiated individually.
+
+Comprehensive benefits:
+
+Occupational healthcare, occupational and private insurance.
+Yearly benefit budget to spend on sport, transport, wellness, lunch, etc.
+Phone subscription with iPhone of choice.
+Relocation support (flight tickets, accommodation, relocation agency support).
+Time and resources for self-development, research, training, conferences, and certification schemes.
+Inspiring office environment with collaborative spaces and silent workspaces.
+Access to state-of-the-art labs and testing facilities.
+Opportunities to attend international space conferences.

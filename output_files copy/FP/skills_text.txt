@@ -1,0 +1,9 @@
+Penetration Testing & Exploitation: Burp Suite, FFUF, feroxbuster, SQLmap, Metasploit, Katana, Nuclei, Hashcat, Hydra, Nmap, BloodHound
+Manual Testing & Exploitation: Web application testing, API security assessment, vulnerability exploitation, privilege escalation, post-exploitation techniques
+Scripting & Automation: Python, Bash, PowerShell, LangChain, LangGraph, N8N
+Security & Networking: TCP/IP, HTTP/HTTPS, firewalls, routing, VPNs, network scanning, protocol analysis
+Cloud & Infrastructure: AWS, Microsoft Azure, cloud security fundamentals
+Application Security: OWASP Top 10, secure coding principles, source code review (Python, JavaScript/TypeScript)
+Reporting & Documentation: Technical report writing, remediation guidance, clear communication of risk
+Development & Systems: Fullstack development (JavaScript/TypeScript), Docker, SQL, Pandas, OpenPyXL
+Cybersecurity Education: CompTIA Network+, Security+, Pentest+, HTB Certified Web Exploitation Specialist (CWES), CPTS/OSCP (in progress)

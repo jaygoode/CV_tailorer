@@ -1,0 +1,22 @@
+
+business name: Wärtsilä
+We are looking for an Agentic Automation Developer who will drive the widespread adoption of Agentic Automation across the company through citizen development. The preferred location for this position is Vaasa. We offer a possibility to hybrid remote work. 
+  
+Your role and responsibilities: 
+    As an Agentic Automation Developer your will be responsible in designing, developing and maintaining process automations and having a proactive role in organizing trainings, workshops, supporting citizen developers and Process Automation experts. 
+    The tasks can also be adjusted based on your individual skills and interests. You’ll be working as a part of Process Automation team with diverse expertise.
+
+Requirements for the position: 
+    Strong hands-on experience building process automations with UiPath or other process automation tools, including both traditional RPA and agentic workflows
+    Proficient in designing, configuring, and deploying AI agents, orchestrating them effectively, and applying advanced prompt engineering techniques to leverage LLMs for agentic automation
+    Experience with at least one programming or scripting language (e.g., Python, C#, PowerShell, JavaScript)
+    Experience with working with APIs, databases, and integrations across systems
+    Experience with DevOps practices and managing the automation lifecycle
+
+Qualifications/to be able to succeed in the position we expect you to have: 
+    A proactive and solution-oriented mindset with a passion for automation and continuous improvement
+    Excellent communication and collaboration skills to work effectively with both technical and non-technical stakeholders
+    Willingness to share knowledge and support others, including citizen developers and Process Automation experts
+    Awareness of security, governance, and compliance best practices in automation environments
+    Curiosity to explore new technologies and drive innovation in automation practices
+    Fluency in English

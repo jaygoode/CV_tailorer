@@ -13,4 +13,8 @@ dependencies = [
     "ollama>=0.6.1",
     "pydantic>=2.12.5",
     "python-dotenv>=1.2.1",
+    "pre-commit>=3.4.0",
+    "black>=24.0",
+    "flake8>=7.0",
+    "isort>=6.0",
 ]

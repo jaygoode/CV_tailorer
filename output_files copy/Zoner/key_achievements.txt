@@ -1,0 +1,4 @@
+• Delivered multiple full-cycle automation projects with measurable efficiency gains, including AI-powered workflow automation using LangChain.
+• Mentored and supported citizen developers in adopting automation and AI tools.
+• Proactively developed and tested agentic workflows for personal use, including automated note rewriting, flashcard generation, and analytical tasks using LLM orchestration.
+• Applied cybersecurity knowledge in practical labs and certification preparation, reinforcing secure system design principles.

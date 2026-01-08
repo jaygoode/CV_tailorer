@@ -1,0 +1,23 @@
+August 2025 – Present
+  Self-Directed Projects & AI/Agentic Automation Development and Cybersecurity
+  • Developed AI-powered automation workflows using LangChain to orchestrate LLM-based tasks, including note rewriting and automatic flashcard creation.
+  • Built and tested agentic automation systems for personal productivity, demonstrating real-world AI agent behavior and workflow integration.
+  • Practiced web exploitation and security testing through HTB Certified Web Exploitation Specialist course, applying security principles to automation design.
+
+January 2023 – August 2025
+  Software Developer & Support Manager, Digia Finland Oy
+  • Designed and deployed Python-based RPA solutions, including API integrations and database interactions, to automate enterprise workflows.
+  • Maintained a large-scale enterprise file transfer/transform system, ensuring data accuracy and secure handling of sensitive information.
+  • Collaborated with technical and business teams to refine automation logic, improve scalability, and validate API functionality.
+  • Supported citizen developers in automation projects, including documentation and troubleshooting.
+  • Rebuilt and managed client relationships through technical demonstrations and solution proposals.
+
+May 2017 - August 2021 (Summers while studying for B.sC in Mech. Eng.)
+  Mechanical Engineering Trainee, Wärtsilä Oy
+  • Conducted engineering calculations and system tuning for engine projects.
+  • Managed technical documentation and supported installation and calibration tasks across international client projects.
+
+Leadership Experience
+  Finnish Army Reserves (Dragsviikin Maakuntajoukkue)
+    • Led a platoon of 30 personnel in high-pressure environments, managing training, logistics, and operations.
+    • Developed strategic thinking and problem-solving skills applicable to cross-functional technical teams.
