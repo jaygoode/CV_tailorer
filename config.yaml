@@ -6,7 +6,7 @@ using_llm: true
 
 input_folder: ./input_files/
 output_folder: ./output_files/
-job_application_filename: zoner_application.txt
+job_application_filename: oneio.txt
 job_experience_file: job_experience_text.txt
 skills_file: skills_text.txt
 suggested_skills_file: suggested_skills_text.txt
