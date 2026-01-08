@@ -1,0 +1,51 @@
+We are looking for a Software Engineer to join the Kapacity.io team at EnergyHub!
+
+Our team, made up of YC alumni (S21) and elite product and software talent, builds some of the most advanced flexibility solutions in the market.
+
+Kapacity.io, previously backed by Y Combinator and acquired by EnergyHub in 2024, focuses on the European energy market, offering an energy management platform to energy companies, allowing them to connect residential heat pumps, EVs and batteries to a Virtual Power Plant. EnergyHub is the leading residential Virtual Power Plant provider in North America, with over 2.5 million connected residential devices.
+
+Virtual Power Plants (VPP) allow energy companies to adjust their customers' power consumption to reduce grid congestion and benefit from price volatility. VPPs reduce the need for peak power generation, reducing investment needs and carbon emissions of the grid. Residential users are compensated for participation with reduced energy costs and/or direct compensation.
+
+Join us in building high impact solutions for energy grid flexibility. If you're a growth minded individual who has a passion for tech and energy, this team is for you!
+
+Here's what you'll do...
+
+Design, build, and maintain the software that sits at the core of Kapacity.io's optimization products.
+Become a core contributor to our codebase, actively participating in work planning, retrospectives, and overall team improvement.
+Work directly with sales, translating business needs into viable technical solutions.
+We use Go, Python, Django, JavaScript, React, PostgreSQL and Docker in our products. We're on AWS and communicate on Slack.
+
+Here's what we're looking for...
+
+We're seeking a Software Engineer with 2+ years of experience developing and deploying production-quality software
+Experience with
+Go(lang), python, docker, AWS
+Relational Databases (Postgresql)
+Time series data
+Adaptability and resilience when facing new, difficult and ambiguous challenges.
+Strong written and verbal communication skills in English.
+Ability to work weekly at our office in Helsinki.
+While we sometimes work remotely, we believe that working together at the office increases our speed and execution.
+About Kapacity.io, part of EnergyHub
+
+Kapacity.io, part of EnergyHub, is a European software provider delivering residential flexibility for energy retailers through advanced heat pump optimisation. We help homeowners save on energy bills while enabling retailers to unlock new revenue streams and support a fully decarbonised grid.
+
+EnergyHub is a growing enterprise software company that works with the most forward-thinking companies in smart energy. EnergyHub's platform lets consumers turn their smart thermostats, electric cars, water heaters, and other products into virtual power plants that keep the grid stable and enable higher penetration of solar and wind power. EnergyHub works on technology that already provides energy and cost savings to millions of people through partnerships with the leading companies. EnergyHub is a subsidiary of Alarm.com (Nasdaq: ALRM). Alarm.com is the leading platform for the smart home. Millions of home and businesses owners depend on Alarm.com technology every day to make their properties safer, smarter, and more efficient.
+
+Interest in energy, power markets and HVAC will help you on your journey with Kapacity.io.
+
+What we offer you...
+
+Join an agile, growth-minded team led by ex-YC founders, backed by EnergyHub's 200+ multinational workforce.
+We use Slack, Google, AWS, Zoom, and modern AI tools.
+A fast-paced working environment with a lot of responsibility and independence
+Thrive with ample career development opportunities while making a global impact.
+Enjoy a culture that prioritizes your daily well-being and work-life balance just as much as our social events.
+Visit kapacity.io to learn more.
+
+Location: Helsinki, Finland (Weekly office presence required)
+Employment Type: Full-time, Permanent
+Working Hours: In accordance with the Finnish Working Hours Act, typically 37.5–40 hours per week.
+Working Language: English* (Note: As an international organization with a multinational workforce and global client base, English is our primary working language; proficiency in Finnish or Swedish is not required for this role).
+Salary Range: €4,000 – €5,000 / month (gross)
+Application Process: Applications will be reviewed on a rolling basis.

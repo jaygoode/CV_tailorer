@@ -1,76 +1,105 @@
 # -------------------------
-# Configuration
+# CV_tailorer Makefile
 # -------------------------
-PYTHON ?= python
-VENV := .venv
-UV := uv
 
+UV := uv
 INPUT_DIR := input_files
 OUTPUT_DIR := output_files
+PYPROJECT := pyproject.toml
+LOCKFILE := requirements.lock
 
 # OS detection
 ifeq ($(OS),Windows_NT)
     RM_FILE = del /Q
     RM_DIR = rmdir /S /Q
-    PY := $(VENV)\Scripts\python
-    ACTIVATE = $(VENV)\Scripts\activate
 else
     RM_FILE = rm -f
     RM_DIR = rm -rf
-    PY := $(VENV)/bin/python
-    ACTIVATE = source $(VENV)/bin/activate
 endif
 
-.PHONY: help venv install activate generate cleanup
+.PHONY: help lock install sync generate cleanup reset precommit precommit-check check-dirs
 
 # -------------------------
 # Help
 # -------------------------
 help:
 	@echo Available targets:
-	@echo   make venv       - Create virtual environment using uv
-	@echo   make install    - Install dependencies using uv
-	@echo   make activate   - Show venv activation command
-	@echo   make generate   - Run generation script
-	@echo   make cleanup    - Remove generated files and folders
+	@echo "  make lock             - Generate dependency lockfile"
+	@echo "  make install          - Install dependencies from lockfile"
+	@echo "  make sync             - Synchronize environment with lockfile"
+	@echo "  make generate         - Run the generator script"
+	@echo "  make cleanup          - Remove input/output files (safe)"
+	@echo "  make reset            - Delete environment + reinstall dependencies"
+	@echo "  make precommit        - Install pre-commit Git hooks"
+	@echo "  make precommit-check  - Run all pre-commit hooks on all files"
 
 # -------------------------
-# Virtual Environment
+# Dependency Locking
 # -------------------------
-venv:
-	@echo Creating virtual environment with uv...
-	$(UV) venv $(VENV)
+lock:
+	@echo "Generating dependency lockfile..."
+	$(UV) pip compile $(PYPROJECT) -o $(LOCKFILE)
 
 # -------------------------
 # Install Dependencies
 # -------------------------
-install: venv
-	@echo Installing dependencies with uv...
-	$(UV) pip install --upgrade pip
-	$(UV) pip install -e .
+install: $(LOCKFILE)
+	@echo "Installing dependencies from lockfile..."
+	$(UV) pip install -r $(LOCKFILE)
 
 # -------------------------
-# Activation (informational)
+# Synchronize Environment
 # -------------------------
-activate:
-	@echo To activate the virtual environment, run:
-	@echo $(ACTIVATE)
+sync:
+	@echo "Synchronizing environment to lockfile..."
+	$(UV) sync
 
 # -------------------------
-# Generate
+# Generate (no explicit venv activation)
 # -------------------------
 generate: install
-	@echo Generating output files...
-	$(PY) scripts/generate.py
+	@echo "Running generator script..."
+	$(UV) run python scripts/generate.py
 
 # -------------------------
-# Cleanup
+# Safety Check
 # -------------------------
-cleanup:
-	@echo Removing input .txt files...
-	-$(RM_FILE) $(INPUT_DIR)\*.txt
+check-dirs:
+	@if [ "$(INPUT_DIR)" = "/" ] || [ "$(OUTPUT_DIR)" = "/" ]; then \
+		echo "Refusing to operate on root directory"; exit 1; \
+	fi
 
-	@echo Removing output folders...
-	-$(RM_DIR) $(OUTPUT_DIR)\*
+# -------------------------
+# Cleanup (Hardened)
+# -------------------------
+cleanup: check-dirs
+	@echo "Cleaning input .txt files..."
+	@if [ -d "$(INPUT_DIR)" ]; then \
+		$(RM_FILE) $(INPUT_DIR)\*.txt 2>nul || true; \
+	fi
 
-	@echo Cleanup complete.
+	@echo "Cleaning output directories..."
+	@if [ -d "$(OUTPUT_DIR)" ]; then \
+		$(RM_DIR) $(OUTPUT_DIR)\* 2>nul || true; \
+	fi
+
+	@echo "Cleanup complete."
+
+# -------------------------
+# Reset Environment
+# -------------------------
+reset:
+	@echo "Resetting environment..."
+	$(UV) venv --clear
+	$(MAKE) install
+
+# -------------------------
+# Pre-commit Hooks
+# -------------------------
+precommit: install
+	@echo "Installing pre-commit Git hooks..."
+	$(UV) run pre-commit install
+
+precommit-check:
+	@echo "Running pre-commit hooks on all files..."
+	$(UV) run pre-commit run --all-files

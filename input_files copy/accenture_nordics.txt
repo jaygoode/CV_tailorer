@@ -1,0 +1,33 @@
+company name: accenture nordics
+
+About the job
+We are seeking a motivated and innovative Junior Applied AI Automation Engineer to join our Song Data & AI team. In this role, you will contribute to the development of impactful AI-driven automations and experiences. You will transform business concepts into scalable, production-ready building blocks and prototypes that integrate seamlessly into larger systems. This is an exciting opportunity to work at the intersection of AI and automation, leveraging cutting-edge technologies to deliver meaningful solutions.
+
+Key Responsibilities:
+
+Design and integrate APIs into automation workflows.
+Develop, debug, and test lightweight services using Python or TypeScript.
+Utilize SDKs to interact with language models and manage JSON payloads.
+Work with embeddings, vector databases, and execute small-scale database queries.
+Contribute to evaluation, iteration, instrumentation, and documentation processes.
+Provide support for demos and internal workshops to showcase AI capabilities.
+
+Basic Qualifications:
+
+Approximately 1 year of coding experience (Python preferred).
+Foundational understanding of large language models (LLMs) and embeddings, with hands-on experience.
+Proficiency with Git, local development environments, and cloud CLI tools.
+Familiarity with AI-assisted coding tools (e.g., Claude Code, Lvable, Cursor, Codex).
+
+Preferred Qualifications:
+
+Experience with orchestration tools such as n8n or LangChain.
+Knowledge of Slack or Microsoft Teams integration.
+Understanding of Retrieval-Augmented Generation (RAG) concepts and prompt engineering fundamentals.
+
+Professional Skills / Behaviors:
+
+A curious and exploratory mindset with a focus on craft, even in prototype development.
+Strong team collaboration skills and a commitment to shared success.
+Proficiency in English is required. Swedish is optional but an advantage.
+Occasional travel may be required

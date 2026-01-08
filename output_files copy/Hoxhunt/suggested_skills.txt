@@ -1,0 +1,10 @@
+data pipelines
+machine learning
+cloud platforms
+modern data warehouses
+scalable data systems
+software architecture
+requirements engineering
+cybersecurity
+gaming
+education technology

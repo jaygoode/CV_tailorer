@@ -1,0 +1,31 @@
+At Wolt, we create technology that brings joy, simplicity and earnings to the neighborhoods of the world. In 2014 we started with delivery of restaurant food. Now we’re building the delivery of (almost) everything and you’ll find us in over 500 cities in 30 countries around the world. In 2022 we joined forces with DoorDash and together we keep on dreaming big and expanding across the globe.
+
+Working at Wolt isn’t always easy, but it’s definitely exciting. Here you’ll learn more, build more, and ship more than in most other companies. You’ll be challenged a lot, but also have a lot of fun on the way. So, if you’re a self-starter with drive and entrepreneurial spirit, this could be the ride of your life.
+
+We have an exciting opportunity for an engineering team lead to join our ranks, building a bigger and better Wolt. We’re currently on the lookout for an Engineering Team Lead to join our Support AI team.
+
+World-class customer service is one of the cornerstones of Wolt Over the years, we have invested a lot in our in-house built support tooling as we believe that it’s the only way we can ensure satisfaction for all of our customers and partners in each of the 30 countries that we operate in. We take huge pride in our customer operations’ quality, so on top of building delightful support experiences in our consumer app, we also want to proactively identify and solve issues before our customers and partners even notice something might be wrong.
+
+What you will do
+
+We’re growing fast and launching a brand-new team on a mission to revolutionize how our support agents work across 30 countries. This team will build smart, scalable tools that empower agents to deliver amazing customer experiences - no matter where they are. The first big challenge? Harnessing the power of LLMs to create seamless translation capabilities so every agent, regardless of their native language, can effortlessly support customers anywhere we operate.
+
+As a team lead, you’ll be an inspirer, facilitator, and enabler for the team to do what they do best by running the weekly cycle of the team, participating in designing technical solutions, making personal development plans, hosting regular 1-on-1s, taking part in recruitment, and being there for your team whenever they need you.
+
+At Wolt, we work with high ownership in small cross-functional teams where each team member works around the whole software development life cycle. Each and every one of our product team members has a say in where we are going and what solutions we implement.
+
+Feel free to check the Wolt Tech Blog for more to read about our culture & technology here.
+
+This role will be based in Helsinki.
+
+Our humble expectations
+
+We expect you to be a good communicator, willing to serve people within and outside your team, and a product-oriented, proactive problem solver, willing to raise issues constructively with your team and the whole Wolt Product team. You know what it takes to develop top-quality software, take care of people, and achieve ambitious goals together.
+
+You are a rare gem with a solid engineering background in Python or Node.js and a passion for AI, so you will be able to speak the same language with your team and stakeholders. We also expect you to have experience working in an environment where the data is at the center of how decisions are made. So if you’re looking for a role to combine your engineering, leadership and passion for AI - this is it!
+
+Additional information
+
+The position will be filled as soon as we find the right person, so make sure to apply as soon as you realize you really, really want to join us!
+
+The compensation will be a negotiable combination of monthly pay and DoorDash RSUs. The latter makes it exceptionally easy to be excited about our company growing and doing well, as you’ll own a piece of the pie.

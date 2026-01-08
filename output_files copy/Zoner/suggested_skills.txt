@@ -1,0 +1,8 @@
+TypeScript
+NodeJS
+WordPress
+Docker/Kubernetes
+CI/CD pipelines
+Monitoring and observability tools
+LangGraph
+vector databases

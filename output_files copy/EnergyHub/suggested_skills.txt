@@ -1,0 +1,10 @@
+Go
+Django
+React
+PostgreSQL
+Time series data
+Agile
+Virtual Power Plant
+Energy management
+HVAC
+Power markets

@@ -1,0 +1,6 @@
+• RPA & Automation and scripting: Python, UiPath (familiar), Selenium, PyAutoGUI, LangChain, N8N, Bash
+• AI & Automation: AI agents, agentic automation, process optimization, LangChain, Huggingface, Ollama, LangGraph, multi-agent system architecture, RAG, vector databases
+• Software Development: JavaScript/TypeScript (Fullstack), Docker
+• Data & Systems: Pandas, OpenPyXL, SQL, Microsoft Azure, AWS, PyPDF2
+• Cybersecurity & Networking: CompTIA Network+, Security+, Pentest+, HTB Certified Web Exploitation Specialist (CWES)
+• Familiar technologies and keywords: APIs, backend, frontend, version control, prompt engineering, asynchronous programming, CI/CD, monitoring, observability

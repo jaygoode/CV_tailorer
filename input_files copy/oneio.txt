@@ -1,0 +1,42 @@
+Role Overview:
+At ONEiO, integrations aren’t delivered as one-off projects - they’re provided as a fully managed service. As an Integration Engineer in our Continuous Services team, you’ll play a key role in maintaining and implementing changes to existing fully managed customer integrations to ensure that the changes are scalable, resilient, and supported for the long term through ONEiO’s Integration Ops Service.
+
+Are you passionate about solving complex integration challenges, enhancing customer experience, and shaping the future of AI-enabled service automation? ONEiO is looking for a driven Integration Engineer to join our Continuous Services team in Helsinki.
+
+This is a hands-on customer facing role interacting with customers and partners to be a product expert of the ONEiO integration platform, supporting internal and external users on how to use the ONEiO integration platform. For our customers that have invested in our Fully managed Integration Ops offering, you will assess and estimate change request requirements to ensure that integrations are implemented successfully without interruption to the service by collaborating with ONEiO’s Expert Services and Account Management teams.
+
+Key Responsibilities:
+
+As an Integration Engineer, you will:
+
+Maintain and optimize customer integrations on the ONEiO Integration Automation Platform
+Troubleshoot and resolve integration issues while also identifying opportunities to improve service quality
+Work closely with Expert Services, Engineering, and Product Management to deliver scalable, customer-centric solutions
+Analyze data, logs, and message flows to identify root causes and prevent future issues
+Provide proactive recommendations for Fully Managed customer integrations
+Contribute to documentation, knowledge sharing, and continuous improvement initiatives
+Confident and clear in customer-facing communication, both technical and business-oriented.
+A problem-solver and system thinker - able to design robust and scalable solutions, not just point-to-point fixes.
+A strong cultural fit with our iONEER Guiding Principles - including customer focus, ownership, adaptability, and critical thinking
+
+What We’re Looking For:
+
+1-3 years of experience with integrations, APIs, web services, or SaaS platforms
+Solid understanding of JSON, XML, REST, authentication, and modern integration patterns
+Strong analytical and troubleshooting skills
+Curiosity, a growth mindset, and willingness to learn new tools and technologies
+Ability to collaborate effectively with customers manage expectations and collaborate across internal technical and commercial teams
+Excellent communication skills in English both written and spoken; Finnish and/or, German language is an advantage
+Experience with ITSM tools (ServiceNow, Jira, Zendesk, BMC, etc.) and or Enterprise IT Service Management
+Located in Helsinki, Finland
+Why ONEiO?
+
+Be part of a company that’s transforming the way integrations are delivered and maintained via a fully managed Continuous Service approach.
+Collaborate with a global and international team of experts who are passionate about modernising IT service delivery.
+Be a Team contributor in managing solutions that have a real impact on customers across industries.
+Join a culture built on curiosity, growth, inclusion, and shared success
+Work with a modern integration automation platform used by enterprises, Service Providers, and Global IT teams
+Be part of a collaborative, supportive, and high-performing Continuous Services team
+Influence the future of AI-enhanced integration operations
+Enjoy a flexible, hybrid work culture at our Helsinki office
+Grow professionally through hands-on learning, mentoring, and cross-team collaboration

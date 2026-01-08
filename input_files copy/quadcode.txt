@@ -1,0 +1,70 @@
+We are Quadcode, a fintech company excelling in financial brokerage activities and delivering advanced financial products to our global clientele. Our flagship product, an internal trading platform, is offered as a Software-as-a-Service (SaaS) solution to other brokers.
+
+We’re looking for a confident QA Automation Engineer (Python) to join our AI team and focus on testing developer interfaces, applied AI solutions, and complex multi-agent scenarios. You’ll play a key role in ensuring the quality and reliability of our AI agents and developer-facing products in real-world business applications.
+
+What We’re Building
+
+We’re creating the IDE of the future — a smart development environment powered by cutting-edge LLM agents. It goes beyond just code: our platform helps developers generate images, sound, video, design, and interfaces.
+
+This is an AI startup within a stable product company — the perfect combination of innovation and support. We’ve already built an MVP, have real internal users, and a team of skilled engineers. We're currently in internal testing and getting ready for production launch.
+
+We operate in GMT+3, with daily team standups at 12:00 GMT+3.
+
+Join us to build the next generation of software tools together!
+Core Responsibilities
+Develop automated tests in Python for complex scenarios.
+Build mock services and test environments for agent testing.
+Integrate tests into AI-specific CI/CD pipelines.
+Monitor AI system performance in production.
+Design quality metrics and dashboards for AI monitoring.
+Document test scenarios and establish best practices.
+Developer Interfaces Testing
+Test SDKs, APIs, and libraries used by developers.
+Validate API documentation and code samples.
+Build automation for dev tools and CLI utilities.
+Test integration workflows and compatibility with various languages/frameworks.
+Test IDE plugins and extensions.
+Validate data schemas and OpenAPI specifications.
+Applied AI Testing
+Test real-world AI use cases and production scenarios.
+Validate model outputs on production data.
+Test AI data processing pipelines.
+Benchmark AI inference performance.
+Agent Scenario Testing
+Design tests for multi-agent systems.
+Validate interactions between AI agents.
+Test task chains and agent workflows.
+Ensure behaviour constraints and safety.
+Test integration with external systems.
+Requirements
+3+ years in software testing.
+Strong Python knowledge: pytest, unittest, mock, asyncio.
+Experience testing UI, APIs and SDKs.
+Understanding of ML/AI agent concepts.
+Experience with REST/GraphQL APIs, WebSockets.
+Familiar with performance testing tools (e.g. locust, k6).
+Experience with Docker and containerization.
+Familiarity with CI/CD and DevOps practices.
+Git proficiency.
+English level: B1 or higher.
+Fluent in Russian (C2).
+Nice to Have
+Understanding of multi-agent system architecture.
+Experience with agent frameworks (LangChain, AutoGen, CrewAI).
+Working with LLM APIs (OpenAI, Anthropic, local models).
+Knowledge of prompt engineering and LLM testing.
+Experience with vector databases (Pinecone, Weaviate, ChromaDB).
+Familiarity with async/event-driven testing.
+Bonus Points
+Python development experience beyond testing.
+Familiarity with ML frameworks (TensorFlow, PyTorch, Hugging Face).
+Experience with cloud AI platforms (AWS Bedrock, Azure OpenAI).
+Understanding of RAG architectures.
+What We Offer
+Full-time remote work (External Vendor contract).
+Competitive compensation (EUR, USD, or crypto).
+Flexible working hours.
+Influence over the architecture of AI testing systems.
+Access to cutting-edge AI tools and platforms.
+A team of professionals specializing in AI.
+Positive and friendly atmosphere.

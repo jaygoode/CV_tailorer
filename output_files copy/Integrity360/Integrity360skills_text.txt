@@ -1,0 +1,9 @@
+Penetration Testing & Security Assessment: Manual testing (OWASP Top 10, MITRE ATT&CK), vulnerability exploitation, privilege escalation, post-exploitation, report writing, risk communication
+Tools: Burp Suite, Nmap, FFUF, feroxbuster, SQLmap, Metasploit, Katana, Nuclei, Hashcat, Hydra, BloodHound, Gobuster
+Networking & Systems: TCP/IP, ports/protocols, firewalls, routing, VPNs, Windows/Linux internals, network security, system hardening
+Programming & Scripting: Python (advanced), Bash, PowerShell, JavaScript/TypeScript (fullstack), C# (familiar), .NET (familiar)
+Security Concepts: CVSS, OWASP Top 10, MITRE ATT&CK, secure coding, source code review, application security, security auditing
+Cloud & DevOps: AWS, Microsoft Azure, Docker, CI/CD, infrastructure as code (IaC)
+Automation & AI: AI agents, agentic workflows, LangChain, LangGraph, process optimization
+Data & Systems: Pandas, OpenPyXL, SQL, data integrity, system documentation
+Certifications & Training: HTB Certified Web Exploitation Specialist (CWES), CompTIA Network+, Security+, Pentest+, CPTS/OSCP (in progress)

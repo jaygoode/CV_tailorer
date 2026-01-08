@@ -1,0 +1,10 @@
+TypeScript
+Node.js
+React
+Electron
+LLM APIs
+AI integration
+cross-platform development
+developer tools
+UX/UI collaboration
+performance optimization

@@ -1,0 +1,4 @@
+• Delivered multiple full-cycle automation projects with measurable efficiency gains, including client-facing RPA solutions.
+• Built and tested agentic workflows using LangChain for personal productivity, demonstrating LLM orchestration and task chaining.
+• Mentored citizen developers in automation practices, improving team-wide adoption of scripting and workflow tools.
+• Applied security principles from cybersecurity training to automation design, ensuring robustness and data integrity.

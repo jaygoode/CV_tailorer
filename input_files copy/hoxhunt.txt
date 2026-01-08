@@ -1,0 +1,101 @@
+our Mission
+Your mission as a Hoxhunt Summer Hunter is simple and powerful: help build software that protects people and organizations from hackers, phishers, and cybercrime.
+
+You’ll work on real products used globally, contributing code that raises awareness against phishing and cyberattacks and helps secure digital societies. This isn’t a sandbox internship, it’s a chance to create meaningful impact while learning how modern, scalable software is built in a fast-growing cybersecurity company.
+
+You don’t need to be a finished product. We’re here to help you grow into the Data/ML engineer you want to become.
+
+Your Role
+As a Summer Hunter, you’ll work in a product development team alongside experienced engineers who are excited to mentor, support, and challenge you.
+
+You’ll contribute to real pipelines, models and analytical workflows, while working on real problems, exploring different paths in data & ML engineering and sharpening your technical foundations.
+
+What You’ll Do
+Build and develop data pipelines, analytical features, or machine learning components used in real production systems
+
+Collaborate with experienced data and software engineers in a supportive team environment
+
+Learn how scalable data systems and ML workflows are designed, built, and maintained
+
+Write clean, maintainable code and continuously improve it through feedback
+
+Take part in team rituals, reviews, and discussions that shape our product
+
+Our key technologies include Python, SQL, modern data warehouses, cloud platforms, Docker, and tools for data processing and machine learning. We actively experiment with frontier models and modern AI development tools, and continuously evaluate new approaches and technologies to improve how we build and learn.
+
+What We’re Looking For
+We’re looking for curious minds and motivated builders. You might be early in your journey, but you’re excited to learn and grow.
+
+You likely have:
+
+Passion for continuous learning and professional development
+
+Attention to detail, analytical thinking, and creative problem-solving skills
+
+Curiosity towards new technologies and scalable data systems and/or machine learning
+
+A degree (completed or ongoing) in data science, mathematics, statistics, computer science or a related field
+
+Basic knowledge of Python, SQL, Git, Linux/Mac command line, and interest in working with data at scale
+
+Fluent written and spoken English
+
+We’re ideally looking for someone who can continue working with us after the summer, either part-time or full-time
+
+Bonus Points If You Also
+Enjoy collaborating and learning through feedback
+
+Have personal projects, coursework, or side projects you’re proud of
+
+Have understanding about topics such as software development, software architectures, or requirements engineering
+
+Are interested in cybersecurity, gaming, or education technology
+
+Have recently graduated or are close to graduating (for example, only missing a thesis)
+
+Why Join Hoxhunt?
+Cybersecurity is one of the fastest-growing industries in the world, and the human factor is its most critical challenge.
+
+At Hoxhunt, you’ll get to
+Build a globally used product with users in 100+ countries
+
+Work in a fast-moving scale-up where ideas and initiative are welcomed
+
+Learn from experienced professionals who genuinely care about your growth
+
+Be part of a fun, ambitious culture filled with collaboration and laughter
+
+On top of that, we offer
+Extensive healthcare for all employees
+
+Flexible working hours and remote-friendly ways of working
+
+ePassi lunch benefit, bi-weekly breakfast, and free snacks and drinks
+
+Gym and swimming pool access in the office building
+
+Rooftop sauna available for all employees
+
+Bi-weekly yoga sessions at the office
+
+On-site masseur twice a week (Hoxhunt covers 50%)
+
+Support for continuous learning: you can order books and other material to support your learning
+
+Duration, Location, and Compensation
+Duration: 12-16 weeks. Start dates are flexible, typically during May–June
+Location: Helsinki (with flexibility for remote work)
+Salary: 3200€ / Month
+
+Our Recruitment Process
+Apply with your CV or portfolio
+
+First interview
+
+Complete an assignment
+
+Live code review session with our engineers, where you'll get in-depth feedback on your assignment
+
+Offer — welcome aboard!
+
+We aim to keep the process transparent, respectful, and human.

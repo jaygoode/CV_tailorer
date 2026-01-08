@@ -1,0 +1,61 @@
+Are you a skilled AI Engineer (Python, TypeScript) passionate about Agentic AI, LLMs and machine
+learning? Do you want to be a key player in a team building the next generation of digital services? Then this might be your next challenge!
+About Us
+We are Zoner, part of group.one, a fast-growing European tech company empowering over 2 million small and medium-sized businesses to succeed online. With a 1,500-strong team across 20 offices, group.one delivers an integrated suite of SaaS products - ranging from AI-powered website builders and WordPress hosting to marketing, e-commerce, and compliance tools. Our mission is simple: to help entrepreneurs win digitally with easy-to-use products, scalable cloud infrastructure, and local expertise.
+
+About the Team
+We believe in modern technology, agile workflows, and a culture where autonomy, innovation, and personal connection are at the core. Our multi-cultural, English-speaking team is a rapidly growing group of passionate engineers, working closely with Product, UI, UX, and QA to build next-generation AI and WordPress solutions. We are developing Flowpilot.one, a conversational AI-based website builder for WordPress that enables anyone to create a professional site through natural dialogue -launching globally across our brands. In parallel, we build and maintain WP.one, a powerful managed WordPress hosting platform designed for agencies and developers. Our team currently includes four
+local engineers (growing to eight), a Support Engineer in Finland, UI and UX designers based in Copenhagen, and QA support from India - all collaborating tightly to deliver high-quality, scalable products that redefine how websites are created and managed.
+
+About the Role
+We are looking for an AI Backend Engineer who has knowledge of Python, Typescript, and with a focus on AI/ML frameworks (e.g., LangChain) and on building Agentic AI systems. As an AI Engineer, you would work on projects which combine conversational AI into website generation, editing and integrations to internal and external systems/plugins. You also get to experiment and increase your knowledge by building AI solutions for different purposes defined by the team.
+
+What You’ll Do:
+Build and evolve our AI-powered backend systems that connect conversational AI with website generation, editing, and plugin integrations.
+Design and implement Agentic AI systems using mainly Python, but also NodeJS/TypeScript
+Integrate with LLM frameworks (e.g. LangChain) to enable intelligent and context-aware automation across our platform.
+Integrate AI Agents to interact with the WordPress ecosystem, internal systems, and third-party APIs (e.g. MCP), ensuring reliability and performance at scale.
+Collaborate closely with the team to deliver smooth, human-like user experiences through seamless backend logic.
+Continuously improve performance, observability, and security, leveraging monitoring tools and best DevOps practices.
+Experiment, prototype, and learn — from exploring new AI frameworks to testing emerging backend technologies.
+Contribute to our engineering culture, sharing insights, best practices, and ideas that push our technical boundaries forward.
+Who You Are:
+You have hands-on experience working with agentic AI systems — from prototyping to development to deployment and ongoing maintenance. You’re deeply curious and driven to stay ahead of the curve, continuously exploring new frameworks, models, and techniques in the rapidly evolving AI landscape.
+You thrive on learning, experimenting, and turning innovative ideas into reliable, real-world systems.
+
+You might be a good fit if you:
+
+You have built Agentic AI Systems.
+You have solid foundational coding skills in Python and are familiar with TypeScript/NodeJS.
+You’re familiar with vector databases (e.g. pgvector, Weaviate, ChromaDB).
+You have an understanding of AI/ML systems and their capabilities and potential integrations.
+You’re curious about Agentic AI, ML algorithms, and asynchronous programming.
+You take a user-centric approach to development, aiming for solutions that are robust, scalable, and intuitive.
+You thrive in an agile, fast-paced, collaborative environment and enjoy working closely with crossfunctional teams.
+You’re eager to learn beyond your core responsibilities and take ownership of your professional growth.
+You want hands-on exposure to cutting-edge technologies and their real-world applications.
+You care deeply about code quality, maintainability, and the impact your work has on users.
+You’re flexible and adaptable, ready to learn new technologies and approaches as needed.
+Strong candidates may also have experience with:
+WordPress-knowledge
+Docker/Kubernetes, containerisation
+CI/CD pipelines and DevOps practices.
+Monitoring and observability tools (Prometheus, Grafana, Loki).
+Language:
+Working language in English, multi-cultural team
+
+Finnish is not required
+
+Why Choose Us?
+The opportunity to work with the latest technology and influence architecture
+A creative and innovative work environment with skilled colleagues
+Flexible working hours, hybrid office/remote setup
+Competitive benefits
+Great opportunities for personal and professional growth
+Salary range: 3,500 – 4,500€ gross per month
+Application process:
+Fill in your application and add a link to your GitHub project which you would like to present to us.
+We will provide selected applicants with a coding challenge.
+First interview, where the applicant presents the chosen project and answers technical questions.
+Second interview
+Offer and onboarding.

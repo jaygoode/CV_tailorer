@@ -1,0 +1,40 @@
+Täydellinen työnkuvaus
+In the era of Data & AI, the possibilities to make a change are limitless. Join our diverse team of professionals to help our Nordic and global customers design, build, and scale Generative AI solutions that drive real business value. We are now looking for Generative AI Engineers with hands-on experience in creating LLM-powered applications and platforms—covering retrieval-augmented generation (RAG), prompt engineering, model evaluation, safety & governance, and LLMOps. In your role, you will build solutions together with our clients using modern tools and cloud services, integrating the latest advances in GenAI into our clients’ core business processes.
+
+Your work will span the following areas
+
+Designing, building, and operating GenAI-enabled applications (chat, summarization, agents, copilots, content generation) for enterprise use cases
+Implementing RAG pipelines: document ingestion, chunking, embeddings, vector stores, retrieval strategies, and answer synthesis
+Prompt engineering and tool/function calling; building and orchestrating multi-step agents/workflows
+Establishing LLMOps foundations: CI/CD for prompts and chains, offline/online evaluation, observability, telemetry, A/B testing, and continuous improvement
+Integrating on‑premises and cloud data sources securely with attention to PII, data residency, and GDPR
+Selecting and operating model endpoints (managed APIs and self/managed hosting), including performance tuning, caching, and cost optimization
+Building guardrails and safety layers (grounding, policy enforcement, content filters, redaction) and aligning with Responsible AI practices
+Collaborating with data, platform, and application teams to land GenAI in production with robust APIs, monitoring, and SLOs
+You preferably have experience in some of the following (and interest to grow in the others)
+
+LLM platforms & clouds: Azure OpenAI / Azure AI, AWS Bedrock, Google Vertex AI, open‑source models (Llama, Mistral, etc.)
+Orchestration & agents: Semantic Kernel, LangChain, LlamaIndex, function/tool calling, planner/agent patterns
+RAG components: vector databases (Azure AI Search, FAISS, Milvus, Pinecone), embedding models, hybrid search, re-ranking
+Evaluation & quality: RAGAS/DeepEval-like frameworks, golden sets, hallucination & toxicity checks, guardrails
+Application dev: Python (FastAPI), TypeScript/Node.js; API design, streaming, and event-driven patterns
+MLOps/LLMOps: MLflow/W&B, feature & model registries, prompt/version management, experiment tracking, telemetry
+Data & integration: document processing (OCR, parsing), knowledge graph/metadata enrichment, connectors to enterprise systems
+Batch/stream processing (nice to have): Spark/Databricks, Airflow, Kafka/Flink for data prep supporting GenAI workloads
+Performance & infra (nice to have): containerization (Docker/Kubernetes), GPU acceleration, quantization/optimization (ONNX, vLLM, TensorRT), caching/indexing strategies
+Security & compliance: Responsible AI controls, GDPR & PII handling
+
+To succeed in this role, we expect the following key qualifications:
+
+Degree in Computer Science, Engineering, or related technical field
+Preferably at least one cloud certificate (Azure, AWS, or GCP) and/or relevant AI/GenAI certifications
+Understanding and interest in end‑to‑end GenAI solution development—from solution design and data grounding to quality assurance, safety, and production operations
+Skills in modern software engineering: version control (Git), documentation, automated testing, CI/CD, and agile teamwork
+Strong willingness and enthusiasm to learn and continuously develop skills in a rapidly evolving GenAI landscape
+Ability to be an innovative, resourceful, and collaborative problem solver with a product mindset
+Why Accenture?
+
+Because people enjoy working here; the work we do is challenging, interesting and meaningful
+Accenture offers a unique career experience and unparalleled opportunity for you to grow and advance. We are driven by the best results, but we never forget to support each other. We like to challenge our employees and give them the opportunity to shine and succeed. We invest heavily in our people’s growth and knowledge development
+Our best and only asset is our people. We believe they’re at their best when knowing what is expected from them and we want to support them in different life phases. Our extensive MyWellbeing –program is one of our key tools for that
+Accenture welcomes and encourages applications from diverse backgrounds related to gender, ethnicity, culture, age etc. We provide an environment of inclusion and diversity where everyone brings distinct experience, talent and culture to their work. We invite you to be part of this diversity!

@@ -1,0 +1,4 @@
+• Delivered multiple full-cycle automation projects with measurable efficiency gains
+• Mentored and supported citizen developers in adopting automation practices
+• Balanced hands-on technical work with leadership, collaboration, and continuous learning
+• Proactively developed and tested agentic workflows for personal use—automating note rewriting, automatic flashcard creation, and analytical tasks using LLM orchestration

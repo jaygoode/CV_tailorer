@@ -1,0 +1,55 @@
+role: Robot Process Automation | Agentic Automation Developer
+languages: Swedish Native | English Fluent | Finnish Intermediate (B1+)
+professional_summary: | 
+  Proactive and solution-oriented Automation Developer with hands-on experience in RPA, agentic
+  workflows, and AI-driven process automation. Skilled in Python and designing AI agents with LLM
+  orchestration. Experienced in mentoring citizen developers, optimizing enterprise processes, and
+  delivering measurable efficiency improvements. Strong communicator and collaborator across technical
+  and non-technical teams, with a passion for innovation and continuous improvement.
+cv_job_experience: | 
+  August 2025 - Present
+  Self-Directed Projects & AI/Agentic Automation Development and Cybersecurity
+    • Developing an autonomous remediation agent that performs security scanning analysis, generates secure code patches via local LLM inference, computes confidence from historical success/failure memory, auto-merges safe fixes, and escalates low-confidence cases to developers
+    • Completed HTB Certified Web Exploitation Specialist course; currently practicing in labs and preparing for
+    advanced certifications (CPTS/OSCP).
+    • Developed an AI-powered study assistant integrated with Anki using LangChain to streamline learning and
+    workflow automation.
+    • Built multiple agentic automation workflows to demonstrate AI orchestration in practical applications
+  January 2023 - August 2025
+  Software Developer & Support Manager, Digia Finland Oy
+    • Designed, developed, and deployed full RPA automation solutions independently using Python and
+    automation frameworks, delivering 3-5 projects annually and saving clients hundreds to thousands of
+    hours.
+    • Maintained and helped develop a large-scale enterprise file transfer/transform system (project value
+    €500,000+), ensuring data accuracy and operational continuity, and robust protection of highly sensitive
+    data.
+    • Collaborated with business and technical teams to refine automation logic, improve scalability, and
+    integrate APIs and databases.
+    • Led knowledge-sharing sessions and supported colleagues and citizen developers in process automation
+    projects.
+    • Rebuilt and managed key client relationships, securing multiple new contracts through technical meetings
+    and solution proposals
+  May 2017 - August 2021 (Summers while studying for B.sC in Mech. Eng.)
+  Mechanical Engineering Trainee, Wärtsilä Oy
+    • Engineering calculations and system tuning for Wärtsilä engine projects.
+    • Managed documentation and supported installation/calibration tasks across international client projects
+  Leadership Experience
+  Finnish Army Reserves (Dragsviikin Maakuntajoukkue)
+    • Leading a platoon of 30 personnel, managing training, logistics, and operations under high-stress
+    conditions.
+    • Developed leadership, teamwork, strategic thinking, and problem-solving skills applicable to crossfunctional technical teams.
+
+cv_skills: | 
+  • RPA & Automation and scripting: Python, UiPath (familiar), Selenium, PyAutoGUI, LangChain, N8N, Bash
+  • AI & Automation: AI agents, agentic automation, process optimization, LangChain, LangGraph, Huggingface, Ollama
+  • Software Development: JavaScript/TypeScript (Fullstack), Docker
+  • Data & Systems: Pandas, OpenPyXL, SQL, Microsoft Azure, AWS, PyPDF2
+  • Completed courses in Cybersecurity & Networking:  CompTIA Nework+, Security+, Pentest+, HTB Certified Web Exploitation Specialist (CWES) 
+  • Familiar technologies and keywords: LangGraph, multi-agent system architecture, APIs, backend, frontend, version control, prompt engineering, RAG, vector databases"
+
+key_achievements: | 
+  • Delivered multiple full-cycle automation projects with measurable efficiency gains.
+  • Mentored and supported citizen developers in adopting automation practices.
+  • Balanced hands-on technical work with leadership, collaboration, and continuous learning.
+  • Proactively developed and tested agentic workflows for my own daily routines—automating note rewriting,
+  automatic flashcard creation, and analytical tasks using LLM orchestration.
